@@ -47,8 +47,8 @@ const Menu = () => {
         `}
       ></div>
       <div
-        className={` right-11 sm:right-14 top-2  z-50 max-xl:fixed ${
-          active && 'right-13 sm:right-16'
+        className={` right-12 sm:right-14 top-2  z-50 max-xl:fixed ${
+          active && 'right-14 sm:right-16'
         }`}
       >
         <div className="py-1 flex items-centers justify-between px-6 max-xl:hidden">

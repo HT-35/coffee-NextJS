@@ -133,7 +133,7 @@ export default function Home() {
               height={80}
               width={80}
               alt=""
-              className="w-[80px] h-[80px]  sm:w-[150px] sm:h-[150px] object-cover  "
+              className="w-[80px] h-[80px]  sm:w-[150px] sm:h-[150px] object-cover  bg-white"
             ></Image>
           </div>
 
