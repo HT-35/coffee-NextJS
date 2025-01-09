@@ -1,0 +1,88 @@
+'use client';
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  //CarouselNext,
+  //CarouselPrevious,
+} from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-regular-svg-icons';
+import Autoplay from 'embla-carousel-autoplay';
+
+export function CarouselEvent() {
+  return (
+    <Carousel
+      //opts={{ loop: true }}
+      opts={{
+        align: 'start',
+      }}
+      className="w-full select-none"
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem
+            data-index={index}
+            key={index}
+            //md:basis-1/2 lg:basis-1/2
+            className={`   basis-1/2	sm:basis-1/2 md:basis-1/2 lg:basis-1/3`}
+            style={{
+              marginRight: '100px',
+            }}
+          >
+            <div
+              className="p-2
+               w-[290px] max-sm:mr-28
+              sm:min-w-[420px]
+              md:min-w-[480px]
+              lg:min-w-[480px]
+
+              xl:min-w-[510px]
+            
+            "
+            >
+              <Card className="p-1">
+                <CardContent className="p-1">
+                  <div className="flex-col w-full text-sm sm:text-base">
+                    <div className="flex justify-between items-center w-full">
+                      <div className="text-[18px] font-bold text-primary">
+                        {index + 1} {''} Design System
+                      </div>
+                      <div className="  flex items-center gap-1 sm:gap-2  border-2  p-[1px] px-2 rounded-lg bg-lightPurple">
+                        <div className="">
+                          <FontAwesomeIcon
+                            icon={faStar}
+                            size="2xs"
+                            style={{ color: '#FFD43B' }}
+                            className="w-3 sm:w-5"
+                          />
+                        </div>
+                        <div className="font-semibold ">2.8K</div>
+                      </div>
+                    </div>
+                    <div className="font-semibold text-[12px] sm:text-base">
+                      Hân Tuyển Tech (CEO Tổ Kiến Coffe)
+                    </div>
+                  </div>
+                  <div className="description  text-right w-full  md:mt-8 text-sm sm:text-base text-[12px]">
+                    08/01/2025
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      {/*<CarouselPrevious />
+      <CarouselNext />*/}
+    </Carousel>
+  );
+}
