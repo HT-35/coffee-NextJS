@@ -20,6 +20,7 @@ export default function Home() {
           src={'/imgs/Highlands.gif'}
           height={500}
           width={500}
+          priority
           alt=""
           className="w-full  h-full object-cover max-h-[600px]"
         ></Image>
@@ -37,6 +38,7 @@ export default function Home() {
                     return (
                       <Image
                         key={index}
+                        priority
                         src={
                           'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/398787186_2659080027581427_1781231852099255083_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WqeYaUBiT74Q7kNvgHdk3hw&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AfLsupi3YSPiq6eYE_JCS_Y&oh=00_AYB_9SdPxmP_OjjRwh6BuOcCSJnQDwwPj_qZIbtiDFS3FQ&oe=67832FE4'
                         }
@@ -56,6 +58,7 @@ export default function Home() {
                   alt=""
                   width={500}
                   height={300}
+                  priority
                   className="object-cover w-full max-h-[200px] rounded-lg "
                 ></Image>
               </div>
@@ -66,6 +69,7 @@ export default function Home() {
                     return (
                       <Image
                         key={index}
+                        priority
                         src={
                           'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/398787186_2659080027581427_1781231852099255083_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WqeYaUBiT74Q7kNvgHdk3hw&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AfLsupi3YSPiq6eYE_JCS_Y&oh=00_AYB_9SdPxmP_OjjRwh6BuOcCSJnQDwwPj_qZIbtiDFS3FQ&oe=67832FE4'
                         }
@@ -86,6 +90,7 @@ export default function Home() {
                 alt=""
                 width={500}
                 height={500}
+                priority
                 className="object-cover w-full  h-full rounded-lg"
               ></Image>
             </div>
@@ -103,6 +108,7 @@ export default function Home() {
               src={'/imgs/Workshops.png'}
               width={500}
               height={500}
+              priority
               alt=""
               className=" w-full object-cover object-center rounded-xl max-h-[80px] sm:max-h-[200px] lg:max-h-[300px]"
             ></Image>
@@ -119,19 +125,11 @@ export default function Home() {
               </Title>
             </div>
 
-            {/*<video
-              autoPlay
-              muted
-              loop
-              className="w-[80px] h-[80px]  sm:w-[150px] sm:h-[150px] object-cover  "
-            >
-              <source src="/videos/coffee.mp4"></source>
-            </video>*/}
-
             <Image
               src="/imgs/coffee.gif"
               height={80}
               width={80}
+              priority
               alt=""
               className="w-[80px] h-[80px]  sm:w-[150px] sm:h-[150px] object-cover  bg-white"
             ></Image>
@@ -173,6 +171,7 @@ export default function Home() {
             src={'/imgs/ig.png'}
             alt=""
             width={500}
+            priority
             height={500}
             className="w-[20px] h-[20px]  md:w-[50px] md:h-[50px]"
             unoptimized={true}

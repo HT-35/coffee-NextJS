@@ -1,9 +1,9 @@
 'use client';
 import ButtonMenu from '@/components/menu/ButtonMenu';
-//import { faBars } from '@fortawesome/free-solid-svg-icons';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 const menuItem: {
@@ -35,6 +35,10 @@ const menuItem: {
 const Menu = () => {
   const [active, setActive] = useState(false);
 
+  const path = usePathname();
+
+  console.log(`file: menu.tsx:40  path:`, path);
+
   // Toggle the state between active and inactive
   const handleActive = () => {
     setActive((prev) => !prev);
@@ -42,21 +46,22 @@ const Menu = () => {
   return (
     <div>
       <div
-        className={`absolute inset-0 bg-black  z-20 transition-all duration-300
+        className={`absolute inset-0 bg-black  z-20 transition-all duration-300 select-none
         ${active ? 'bg-opacity-50' : 'bg-opacity-0 pointer-events-none'}
         `}
       ></div>
       <div
-        className={` right-12 sm:right-14 top-2  z-50 max-xl:fixed ${
+        className={` right-12 sm:right-14 top-2  z-50 max-lg:fixed ${
           active && 'right-14 sm:right-16'
         }`}
       >
-        <div className="py-1 flex items-centers justify-between px-6 max-xl:hidden">
+        <div className="py-1 flex items-centers justify-between px-6 max-lg:hidden">
           <div className="text-xl font-semibold">
             <Link href={'/'}>
               <Image
                 src={'/imgs/iconHome.png'}
                 alt=""
+                priority
                 width={80}
                 height={80}
               ></Image>
@@ -65,7 +70,13 @@ const Menu = () => {
           <div className="flex gap-8 text-xl font-semibold justify-center items-center ">
             {menuItem.map((item, index) => {
               return (
-                <Link href={item.path} key={index} className="">
+                <Link
+                  href={item.path}
+                  key={index}
+                  className={`cursor-pointer hover:text-primary   py-4 ${
+                    path === item.path ? 'text-primary' : ''
+                  }`}
+                >
                   {item.title}
                 </Link>
               );
@@ -80,7 +91,7 @@ const Menu = () => {
           </div>
           <div className=""></div>
         </div>
-        <div className="xl:hidden bg-slate-700   ">
+        <div className="lg:hidden bg-slate-700   ">
           <ButtonMenu
             menuItem={menuItem}
             active={active}

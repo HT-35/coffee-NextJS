@@ -9,6 +9,7 @@ const ItemCoffee = () => {
         height={300}
         width={300}
         alt=""
+        priority
       ></Image>
       <div className="text-center ml-2 font-bold text-[12px] sm:text-base">
         Match Đá Xay

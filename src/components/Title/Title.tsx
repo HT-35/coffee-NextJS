@@ -9,7 +9,7 @@ const Title = ({
 }) => {
   return (
     <div
-      className={` select-none  text-center text-4xl font-bold my-2 mt-8 text-amber-700
+      className={` select-none  text-center text-4xl font-bold my-2 mt-8 mb-6 text-amber-700
         max-md:text-lg
         max-lg:text-2xl
         ${className}`}

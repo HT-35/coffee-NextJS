@@ -28,11 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-x-hidden`}
+        suppressHydrationWarning={true}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-x-hidden h-full min-h-svh`}
       >
         <Menu></Menu>
         {children}
-        <Footer></Footer>
+        <div className="absolute top-full">
+          <Footer></Footer>
+        </div>
       </body>
     </html>
   );

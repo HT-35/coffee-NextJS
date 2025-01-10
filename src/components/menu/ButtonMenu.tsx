@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@radix-ui/react-dropdown-menu';
+import Link from 'next/link';
 
 import React from 'react';
 
@@ -79,15 +80,24 @@ const ButtonMenu = ({
           {menuItem?.length > 0 &&
             menuItem?.map((item, index) => {
               return (
-                <DropdownMenuItem
-                  key={index}
-                  className=" px-4 py-2 flex items-center justify-between text-sm sm:text-base rounded-lg"
-                >
-                  {item?.title}
-                  <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                </DropdownMenuItem>
+                <Link key={index} href={item.path} className="">
+                  <DropdownMenuItem className="border-0 px-4 py-2 flex items-center justify-between text-sm sm:text-base rounded-lg hover:bg-primary hover:text-white cursor-pointer">
+                    {item?.title}
+                    <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                </Link>
               );
             })}
+          <Link
+            href="https://www.google.com/maps/place/T%E1%BB%95+Ki%E1%BA%BFn+Coffee/@10.783782,106.657103,19z/data=!4m6!3m5!1s0x31752fc1ef81ffed:0x5445e40ddd97cb3d!8m2!3d10.7837822!4d106.6571028!16s%2Fg%2F11wv3q8pzj?hl=vi&entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D"
+            className=""
+            target="_blank"
+          >
+            <DropdownMenuItem className="border-0 px-4 py-2 flex items-center justify-between text-sm sm:text-base rounded-lg hover:bg-primary hover:text-white cursor-pointer">
+              Đường Tới Quán
+              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+            </DropdownMenuItem>
+          </Link>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>

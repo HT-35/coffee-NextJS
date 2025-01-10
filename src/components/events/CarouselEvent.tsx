@@ -33,7 +33,7 @@ export function CarouselEvent() {
             data-index={index}
             key={index}
             //md:basis-1/2 lg:basis-1/2
-            className={`   basis-1/2	sm:basis-1/2 md:basis-1/2 lg:basis-1/3`}
+            className={`   basis-1/2	sm:basis-1/2 md:basis-1/2 lg:basis-1/3 `}
             style={{
               marginRight: '100px',
             }}
@@ -42,21 +42,21 @@ export function CarouselEvent() {
               className="p-2
                w-[290px] max-sm:mr-28
               sm:min-w-[420px]
-              md:min-w-[480px]
-              lg:min-w-[480px]
+              md:min-w-[450px]
+              lg:min-w-[450px]
 
               xl:min-w-[510px]
             
             "
             >
-              <Card className="p-1">
-                <CardContent className="p-1">
+              <Card className="">
+                <CardContent className="p-2 border-2 border-primary border-opacity-50 rounded-lg">
                   <div className="flex-col w-full text-sm sm:text-base">
                     <div className="flex justify-between items-center w-full">
                       <div className="text-[18px] font-bold text-primary">
                         {index + 1} {''} Design System
                       </div>
-                      <div className="  flex items-center gap-1 sm:gap-2  border-2  p-[1px] px-2 rounded-lg bg-lightPurple">
+                      <div className="  flex items-center gap-1 sm:gap-2  border-2 border-primary  p-[1px] px-2 rounded-lg bg-lightPurple">
                         <div className="">
                           <FontAwesomeIcon
                             icon={faStar}
