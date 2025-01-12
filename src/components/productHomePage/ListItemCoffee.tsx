@@ -1,4 +1,4 @@
-import ItemCoffee from '@/components/product/ItemCoffee';
+import ItemCoffee from '@/components/productHomePage/ItemCoffee';
 import React from 'react';
 
 const ListItemCoffee = () => {

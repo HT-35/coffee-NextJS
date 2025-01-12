@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Menu from '@/components/menu/menu';
 import Footer from '@/components/footer/Footer';
+//import AntsFollowingMouse from '@/components/animation/AntsFollowingMouse';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -29,13 +30,16 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-x-hidden h-full min-h-svh`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-full  overflow-x-hidden`}
       >
-        <Menu></Menu>
-        {children}
-        <div className="absolute top-full">
-          <Footer></Footer>
-        </div>
+        {/*<div className="absolute inset-0 z-50 pointer-events-none max-lg:hidden">
+          <AntsFollowingMouse />
+        </div>*/}
+
+        <Menu />
+
+        <div className="relative">{children}</div>
+        <Footer />
       </body>
     </html>
   );

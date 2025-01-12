@@ -1,16 +1,15 @@
 import ListWater from '@/components/menu/product/listWater';
 import Title from '@/components/Title/Title';
-import React from 'react';
 
-const Menu = () => {
+const TeaPage = () => {
   return (
-    <>
-      <Title className="text-left  mb-6" align="left">
-        Cà phê
+    <div>
+      <Title className="text-left my-0 mt-0 mb-0" align="left">
+        Trà
       </Title>
       <ListWater></ListWater>
-    </>
+    </div>
   );
 };
 
-export default Menu;
+export default TeaPage;

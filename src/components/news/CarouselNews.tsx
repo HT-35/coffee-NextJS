@@ -59,7 +59,7 @@ export function CarouselNews() {
                       'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/399469847_2659079974248099_3730907965276537688_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lJSR3zTlV-sQ7kNvgGVti49&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=A3R_qmXzhpnjsLImZtjbKmr&oh=00_AYD8WOYqdEod6-vTFxJ49Glmkf6YyDzbGoCKEj-XyVuXrg&oe=67841996'
                     }
                     alt=""
-                    priority
+                    priority={false}
                     width={500}
                     height={500}
                     className="object-center object-cover h-[100px] w-full"

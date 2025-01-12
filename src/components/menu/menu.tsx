@@ -37,8 +37,6 @@ const Menu = () => {
 
   const path = usePathname();
 
-  console.log(`file: menu.tsx:40  path:`, path);
-
   // Toggle the state between active and inactive
   const handleActive = () => {
     setActive((prev) => !prev);
@@ -55,13 +53,13 @@ const Menu = () => {
           active && 'right-14 sm:right-16'
         }`}
       >
-        <div className="py-1 flex items-centers justify-between px-6 max-lg:hidden">
-          <div className="text-xl font-semibold">
+        <div className="py-1 flex items-centers justify-start pl-20 max-lg:hidden">
+          <div className="text-xl font-semibold basis-1/6">
             <Link href={'/'}>
               <Image
                 src={'/imgs/iconHome.png'}
                 alt=""
-                priority
+                priority={false}
                 width={80}
                 height={80}
               ></Image>

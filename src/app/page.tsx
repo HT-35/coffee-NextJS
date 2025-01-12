@@ -1,6 +1,7 @@
+import AntRunningEffect from '@/components/animation/ant';
 import { CarouselEvent } from '@/components/events/CarouselEvent';
 import { CarouselNews } from '@/components/news/CarouselNews';
-import ListItemCoffee from '@/components/product/ListItemCoffee';
+import ListItemCoffee from '@/components/productHomePage/ListItemCoffee';
 import Title from '@/components/Title/Title';
 import { Button } from '@/components/ui/button';
 import {
@@ -10,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import Link from 'next/link';
 //import Image from 'next/image';
 
 export default function Home() {
@@ -26,7 +28,7 @@ export default function Home() {
         ></Image>
       </div>
 
-      <div className="Active w-full  px-14 max-xl:px-2">
+      <div className="Active w-full  px-14 max-xl:px-2 pb-16">
         <Title>Hoạt Động</Title>
         <div className="Active w-full ">
           <div className="flex gap-6 max-lg:gap-2">
@@ -139,9 +141,11 @@ export default function Home() {
             <ListItemCoffee></ListItemCoffee>
             <div className="flex w-full items-center">
               <div className="basis-5/12 h-[1px] bg-black w-full shadow-2xl"></div>
-              <Button className="basis-2/12 bg-primary text-white px-12 py-0 rounded-lg mx-5  shadow-xl text-sm sm:text-base">
-                Menu
-              </Button>
+              <Link href={'/menu'}>
+                <Button className="basis-2/12 bg-primary text-white px-12 py-0 rounded-lg mx-5  shadow-xl text-sm sm:text-base">
+                  Menu
+                </Button>
+              </Link>
               <div className="basis-5/12 h-[1px]  bg-black w-full shadow-2xl"></div>
             </div>
           </div>
@@ -156,16 +160,16 @@ export default function Home() {
           <FontAwesomeIcon
             icon={faFacebook}
             style={{ color: '#0e7acd' }}
-            className="w-[20px] h-[20px] md:w-[50px]  md:h-[50px]"
+            className="w-[30px] h-[30px] md:w-[50px]  md:h-[50px]"
           />
           <FontAwesomeIcon
             icon={faThreads}
-            className="w-[20px]  h-[20px] md:w-[50px] md:h-[50px]"
+            className="w-[30px]  h-[30px] md:w-[50px] md:h-[50px]"
           />
           <FontAwesomeIcon
             icon={faYoutube}
             style={{ color: '#ff0000' }}
-            className="w-[20px] h-[20px]  md:w-[50px] md:h-[50px]"
+            className="w-[30px] h-[30px]  md:w-[50px] md:h-[50px]"
           />
           <Image
             src={'/imgs/ig.png'}
@@ -173,9 +177,13 @@ export default function Home() {
             width={500}
             priority
             height={500}
-            className="w-[20px] h-[20px]  md:w-[50px] md:h-[50px]"
+            className="w-[30px] h-[30px]  md:w-[50px] md:h-[50px]"
             unoptimized={true}
           ></Image>
+        </div>
+
+        <div className=" w-full mt-4 my-6 relative -translate-y-10">
+          <AntRunningEffect></AntRunningEffect>
         </div>
       </div>
     </div>

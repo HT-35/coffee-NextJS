@@ -1,6 +1,6 @@
 'use client';
 import { DropdownMenuShortcut } from '@/components/ui/dropdown-menu';
-import { faBars, faCaretUp, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   DropdownMenu,
@@ -56,19 +56,19 @@ const ButtonMenu = ({
       </DropdownMenuTrigger>
 
       <DropdownMenuContent
-        className="relative w-64  sm:w-72 bg-white px-4 py-2 mr-2 sm:mr-7 mt-5 rounded-lg  
+        className="relative w-64  sm:w-72 bg-white px-4 py-2 mr-6 sm:mr-7 mt-2 rounded-lg  
      
       shadow-2xl
       "
       >
-        <div className="absolute top-0 right-0 -translate-y-7 -z-10">
+        {/*<div className="absolute top-0 right-0 -translate-y-7 -z-10">
           <FontAwesomeIcon
             icon={faCaretUp}
             size="4x"
             style={{ color: 'white' }}
             className="shadow-2xl "
           />
-        </div>
+        </div>*/}
 
         <DropdownMenuLabel className=" px-4 py-2 font-bold">
           Danh Sách Sản Phẩm
