@@ -53,7 +53,7 @@ const Menu = () => {
           active && 'right-14 sm:right-16'
         }`}
       >
-        <div className="py-1 flex items-centers justify-start pl-20 max-lg:hidden">
+        <div className="py-1 flex items-centers justify-start pl-20  border-b-2 fixed w-full z-[999] bg-white text-black max-lg:hidden">
           <div className="text-xl font-semibold basis-1/6">
             <Link href={'/'}>
               <Image
@@ -75,7 +75,7 @@ const Menu = () => {
                     path === item.path ? 'text-primary' : ''
                   }`}
                 >
-                  {item.title}
+                  <h1>{item.title}</h1>
                 </Link>
               );
             })}
@@ -84,7 +84,7 @@ const Menu = () => {
               className=""
               target="_blank"
             >
-              Đường Tới Quán
+              <h1>Đường Tới Quán</h1>
             </Link>
           </div>
           <div className=""></div>

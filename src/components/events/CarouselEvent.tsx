@@ -65,12 +65,12 @@ export function CarouselEvent() {
                             className="w-3 sm:w-5"
                           />
                         </div>
-                        <div className="font-semibold ">2.8K</div>
+                        <h1 className="font-semibold ">2.8K</h1>
                       </div>
                     </div>
-                    <div className="font-semibold text-[12px] sm:text-base">
+                    <h1 className=" text-[12px] sm:text-base">
                       Hân Tuyển Tech (CEO Tổ Kiến Coffe)
-                    </div>
+                    </h1>
                   </div>
                   <div className="description  text-right w-full  md:mt-8 text-sm sm:text-base text-[12px]">
                     08/01/2025

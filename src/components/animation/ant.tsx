@@ -2,12 +2,13 @@
 
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'; // Giả sử bạn dùng Next.js
 
 const AntRunningEffect = () => {
   const controls = useAnimation();
-  const [windowWidth, setWindowWidth] = useState<number | null>(null); // Khởi tạo null để kiểm tra trạng thái mount
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+  const path = usePathname(); // Lấy đường dẫn hiện tại
 
-  // Cập nhật chiều rộng màn hình khi component được mount
   useEffect(() => {
     setWindowWidth(window.innerWidth);
 
@@ -18,7 +19,9 @@ const AntRunningEffect = () => {
   }, []);
 
   useEffect(() => {
-    if (windowWidth === null) return () => {}; // Chỉ chạy khi windowWidth đã được cập nhật
+    let isMounted = true; // Biến cờ theo dõi trạng thái component
+
+    if (windowWidth === null) return; // Chỉ chạy khi windowWidth đã được cập nhật
 
     const animateAnt = () => {
       controls
@@ -31,6 +34,7 @@ const AntRunningEffect = () => {
           },
         })
         .then(async () => {
+          if (!isMounted || path !== '/') return; // Hủy nếu component unmount hoặc không phải ở trang home
           await controls.start({ x: -80 }); // Đặt lại vị trí ban đầu ngoài màn hình bên trái
           animateAnt(); // Gọi lại animation để lặp vô tận
         });
@@ -38,8 +42,10 @@ const AntRunningEffect = () => {
 
     animateAnt();
 
-    return () => {};
-  }, [controls, windowWidth]);
+    return () => {
+      isMounted = false; // Đánh dấu component đã unmount
+    };
+  }, [controls, path, windowWidth]);
 
   return (
     <>

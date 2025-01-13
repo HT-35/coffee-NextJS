@@ -1,6 +1,5 @@
 import ListWater from '@/components/menu/product/listWater';
 import Title from '@/components/Title/Title';
-import React from 'react';
 
 const Menu = () => {
   return (

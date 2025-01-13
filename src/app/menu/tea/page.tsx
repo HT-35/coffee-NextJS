@@ -4,7 +4,7 @@ import Title from '@/components/Title/Title';
 const TeaPage = () => {
   return (
     <div>
-      <Title className="text-left my-0 mt-0 mb-0" align="left">
+      <Title className="text-left  mb-6" align="left">
         Trà
       </Title>
       <ListWater></ListWater>

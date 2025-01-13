@@ -14,7 +14,7 @@ const ItemWater = () => {
           height={250}
           priority={false} // Chỉ load khi cần thiết
           loading="lazy" // Lazy loading
-          quality={25} // Chất lượng hình ảnh thấp nhất có thể (1-100)
+          quality={1} // Chất lượng hình ảnh thấp nhất có thể (1-100)
           sizes="(max-width: 250px) 100vw, 250px"
           style={{
             objectFit: 'cover',

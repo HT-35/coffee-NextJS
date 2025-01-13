@@ -29,30 +29,27 @@ export function CarouselNews() {
             data-index={index}
             key={index}
             className={`
-					basis-1/2   sm:basis-1/2 lg:basis-1/3
-
-       
+					basis-1/2   sm:basis-1/2 lg:basis-1/3   mr-[107px]
 					`}
-            style={{
-              marginRight: '105px',
-            }}
+            //style={{
+            //  marginRight: '107px',
+            //}}
           >
-            <Card className="  border-amber-700 w-[280px] sm:min-w-[400px] md:min-w-[450px] lg:min-w-[460px] xl:min-w-[550px]">
-              <CardContent className="  sm:pt-0 sm:p-6 p-2  sm:min-w-[400px] md:min-w-[450px] lg:min-w-[460px] xl:min-w-[520px]">
+            <Card className="  border-amber-700 w-[270px] sm:min-w-[400px] md:min-w-[450px] lg:min-w-[460px] xl:min-w-[500px]">
+              <CardContent className="  sm:pt-0 sm:p-6 p-2  sm:min-w-[400px] md:min-w-[450px] lg:min-w-[460px] xl:min-w-[500px]">
                 <div className="">
                   <div className="flex justify-between items-center w-full">
                     <div className="text-[18px] font-bold text-primary">
                       Hướng Dẫn Sửa CV
                     </div>
                   </div>
-                  <div className="font-semibold text-[12px] sm:text-base">
+                  <h1 className=" text-[12px] sm:text-base">
                     Hân Tuyển Tech (CEO Tổ Kiến Coffe)
-                  </div>
+                  </h1>
                 </div>
-                <div className="text-[12px]">
-                  Ngành IT (Information Technology) là nhóm ngành công nghệ
-                  thông tin ...
-                </div>
+                <p className="text-[12px] sm:text-[14] mb-1">
+                  IT (Information Technology) là ngành công nghệ thông tin ...
+                </p>
                 <div className="w-full">
                   <Image
                     src={
