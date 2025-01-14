@@ -10,12 +10,18 @@ const AntRunningEffect = () => {
   const path = usePathname(); // Lấy đường dẫn hiện tại
 
   useEffect(() => {
+    if (typeof window === undefined) {
+      return;
+    }
+
     setWindowWidth(window.innerWidth);
 
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   useEffect(() => {

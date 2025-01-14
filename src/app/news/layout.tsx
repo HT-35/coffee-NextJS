@@ -1,10 +1,10 @@
 import MenuNews from '@/components/news/menuNew/MenuNews';
-import Link from 'next/link';
+
 import React from 'react';
 
 const LayOutNew = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="pt-10 px-2 lg:px-10 h-screen">
+    <div className="pt-10 ">
       <div className=" max-w-[750px] mx-auto text-center">
         <h1 className=" text-base lg:text-2xl border-b-4 border-primary font-bold max-w-[150px] mx-auto text-center mb-4">
           Tổ Kiến
@@ -16,7 +16,7 @@ const LayOutNew = ({ children }: { children: React.ReactNode }) => {
         </p>
         <MenuNews></MenuNews>
       </div>
-      <div className="">{children}</div>
+      <div className=" mt-10">{children}</div>
     </div>
   );
 };

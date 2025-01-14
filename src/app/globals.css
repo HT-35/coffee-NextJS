@@ -68,7 +68,8 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground scroll-smooth;
+    @apply bg-background text-foreground scroll-smooth max-w-screen-2xl mx-auto;
+
     font-family: var(--font-sans); /* Sử dụng font mặc định */
   }
 
@@ -76,8 +77,8 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif); /* Sử dụng Verdana Bold */
-    font-weight: 600; /* Giảm độ bold */
+    font-family: var(--font-serif);
+    font-weight: 600;
   }
 
   body.no-scroll {

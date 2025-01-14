@@ -75,7 +75,7 @@ const Menu = () => {
                     path === item.path ? 'text-primary' : ''
                   }`}
                 >
-                  <h1>{item.title}</h1>
+                  <p className="text-base font-bold">{item.title}</p>
                 </Link>
               );
             })}
@@ -84,7 +84,7 @@ const Menu = () => {
               className=""
               target="_blank"
             >
-              <h1>Đường Tới Quán</h1>
+              <p className="text-base font-bold">Đường Tới Quán</p>
             </Link>
           </div>
           <div className=""></div>

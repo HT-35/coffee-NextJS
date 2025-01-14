@@ -47,7 +47,7 @@ export function CarouselNews() {
                     Hân Tuyển Tech (CEO Tổ Kiến Coffe)
                   </h1>
                 </div>
-                <p className="text-[12px] sm:text-[14] mb-1">
+                <p className="text-[12px] sm:text-[14px] mb-1">
                   IT (Information Technology) là ngành công nghệ thông tin ...
                 </p>
                 <div className="w-full">
@@ -62,9 +62,9 @@ export function CarouselNews() {
                     className="object-center object-cover h-[100px] w-full"
                   ></Image>
                 </div>
-                <div className=" mt-2  text-right font-semibold text-[10px] sm:text-base px-1">
+                <p className=" mt-2  text-right  text-[12px] sm:text-[14px] text-slate-400  px-1">
                   08/01/2025
-                </div>
+                </p>
               </CardContent>
             </Card>
           </CarouselItem>

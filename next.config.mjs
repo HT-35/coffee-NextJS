@@ -26,6 +26,18 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'file.hstatic.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.dribbble.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

@@ -14,6 +14,7 @@ const config: Config = {
         lightPurple: '#F6F3F8',
 
         primary: '#b45309',
+        secondary: '#FFF7E6',
 
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -29,10 +30,10 @@ const config: Config = {
         //  DEFAULT: 'hsl(var(--primary))',
         //  foreground: 'hsl(var(--primary-foreground))',
         //},
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
+        //secondary: {
+        //  DEFAULT: 'hsl(var(--secondary))',
+        //  foreground: 'hsl(var(--secondary-foreground))',
+        //},
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
@@ -60,6 +61,9 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+      },
+      lineHeight: {
+        'custom-bottom': '28px', // Tuỳ chỉnh khoảng cách dòng
       },
     },
   },

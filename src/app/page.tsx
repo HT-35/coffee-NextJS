@@ -42,7 +42,7 @@ export default function Home() {
                         key={index}
                         priority={false}
                         src={
-                          'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/398787186_2659080027581427_1781231852099255083_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WqeYaUBiT74Q7kNvgHdk3hw&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AfLsupi3YSPiq6eYE_JCS_Y&oh=00_AYB_9SdPxmP_OjjRwh6BuOcCSJnQDwwPj_qZIbtiDFS3FQ&oe=67832FE4'
+                          'https://cdn.dribbble.com/userupload/18164563/file/original-9a08d098be90b95a3f2ec743dd886442.png?resize=1200x900&vertical=center'
                         }
                         alt=""
                         width={500}
@@ -55,7 +55,7 @@ export default function Home() {
               <div className="w-full ">
                 <Image
                   src={
-                    'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/420134143_2709209925901770_8216559354801765788_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=l1F9R2b29KYQ7kNvgEtRNBt&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AeOqJo6CRpLc8ZdA6684HCM&oh=00_AYAvnnBS1v6bAIzvqFk4GOqrMNVlLu_eeY8QMU_yRn_f3Q&oe=67833705'
+                    'https://cdn.dribbble.com/userupload/18164563/file/original-9a08d098be90b95a3f2ec743dd886442.png?resize=1200x900&vertical=center'
                   }
                   alt=""
                   width={500}
@@ -73,7 +73,7 @@ export default function Home() {
                         key={index}
                         priority={false}
                         src={
-                          'https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/398787186_2659080027581427_1781231852099255083_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WqeYaUBiT74Q7kNvgHdk3hw&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AfLsupi3YSPiq6eYE_JCS_Y&oh=00_AYB_9SdPxmP_OjjRwh6BuOcCSJnQDwwPj_qZIbtiDFS3FQ&oe=67832FE4'
+                          'https://cdn.dribbble.com/userupload/18164563/file/original-9a08d098be90b95a3f2ec743dd886442.png?resize=1200x900&vertical=center'
                         }
                         alt=""
                         width={500}
@@ -87,7 +87,7 @@ export default function Home() {
             <div className="basis-3/12 max-lg:basis-4/12">
               <Image
                 src={
-                  'https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/398808878_2659080010914762_4850247571818572627_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mC21mmQTyfwQ7kNvgFy-Met&_nc_zt=23&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=ADdM8BbpvNwE-SjP4iR0CPq&oh=00_AYAcLdOjw6ryIf1wV6ekmng2TW4iF5BB4lpaaPhc6ltdFw&oe=678410A4'
+                  'https://cdn.dribbble.com/userupload/10359938/file/original-03d701b593901415bef3d4eeba1dee36.png?resize=1200x900&vertical=center'
                 }
                 alt=""
                 width={500}

@@ -9,11 +9,11 @@ const menuNew = [
     path: '/news',
   },
   {
-    title: 'CV',
+    title: 'Khám Phá',
     path: '/news/cv',
   },
   {
-    title: ' WORK',
+    title: 'Tư Vấn Nghề Nghiệp',
     path: '/news/work',
   },
 ];

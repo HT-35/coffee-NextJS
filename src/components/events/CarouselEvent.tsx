@@ -72,9 +72,9 @@ export function CarouselEvent() {
                       Hân Tuyển Tech (CEO Tổ Kiến Coffe)
                     </h1>
                   </div>
-                  <div className="description  text-right w-full  md:mt-8 text-sm sm:text-base text-[12px]">
+                  <p className=" mt-2  text-right  text-[12px] sm:text-[14px] text-slate-400  px-1">
                     08/01/2025
-                  </div>
+                  </p>
                 </CardContent>
               </Card>
             </div>
