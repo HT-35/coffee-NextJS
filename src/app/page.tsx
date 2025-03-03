@@ -1,8 +1,8 @@
-import AntRunningEffect from '@/components/animation/ant';
-import { CarouselEvent } from '@/components/events/CarouselEvent';
+import AntRunningEffect from '@/components/ant';
+import { CarouselEvent } from '@/components/CarouselEvent';
 import { CarouselNews } from '@/components/news/CarouselNews';
-import ListItemCoffee from '@/components/productHomePage/ListItemCoffee';
-import Title from '@/components/Title/Title';
+import ListItemCoffee from '@/components/ListItemCoffee';
+import Title from '@/components/Title';
 import { Button } from '@/components/ui/button';
 import {
   faFacebook,

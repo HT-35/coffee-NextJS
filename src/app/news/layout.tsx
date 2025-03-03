@@ -4,8 +4,8 @@ import React from 'react';
 
 const LayOutNew = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="pt-10 ">
-      <div className=" max-w-[750px] mx-auto text-center">
+    <div className="lg:pt-10 pt-0 max-w-[1300px] mx-auto">
+      <div className=" max-w-[900px] mx-auto text-center px-5">
         <h1 className=" text-base lg:text-2xl border-b-4 border-primary font-bold max-w-[150px] mx-auto text-center mb-4">
           Tổ Kiến
         </h1>

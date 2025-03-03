@@ -1,23 +1,23 @@
-import Card from '@/components/news/card/Card';
+import Card from '@/components/Card';
 
 import React from 'react';
 
 const News = () => {
   return (
-    <div className="">
-      <div className="flex px-10  gap-10 mb-28">
-        <div className="basis-4/12">
+    <>
+      <div className="flex max-lg:flex-col px-10  gap-10 lg:mb-28 mb-10">
+        <div className="lg:basis-4/12">
           <Card
-            height="h-[300px]"
+            heightImg="h-[300px]"
             img="https://file.hstatic.net/1000075078/article/thecoffeehouse_traxanhtaybac_1_d8c2ac635c5941a19c0065339727e41a_master.jpg"
             title="NGƯỢC LÊN TÂY BẮC GÓI VỊ MỘC VỀ XUÔI"
             date="16/08/2023"
             description="Những dải ruộng bậc thang, các cô gái Thái với điệu múa xòe hoa, muôn cung đường ngợp mùa hoa… đó là rẻo cao Tây Bắc luôn làm say lòng..."
-          ></Card>
+          />
         </div>
-        <div className="basis-8/12">
+        <div className="lg:basis-8/12">
           <Card
-            height="h-[600px]"
+            heightImg="h-[400px]"
             img="https://file.hstatic.net/1000075078/article/signaturebythecoffeehouse_03_16b2ab7101e14d62835a4b231e73b65d_master.jpg"
             title="NGƯỢC LÊN TÂY BẮC GÓI VỊ MỘC VỀ XUÔI"
             date="16/08/2023"
@@ -26,16 +26,16 @@ const News = () => {
         </div>
       </div>
 
-      <div className="flex bg-secondary py-10  w-full h-full  my-40">
-        <div className="basis-5/12 -translate-y-28 shadow-2xl ">
+      <div className="flex max-lg:flex-col bg-secondary py-10  w-full h-full  lg:my-40">
+        <div className=" lg:basis-5/12 max-lg:hidden basis-5/12  lg:-translate-y-28 lg:shadow-2xl ">
           <Card
-            height="h-full"
+            heightImg="h-[900px]"
             classNameImage="rounded-none shadow-2xl "
             img="https://file.hstatic.net/1000075078/file/photo_2021-11-25_09-31-52_52c6f13fcc06433db2362281059d1c09.jpg"
           />
         </div>
 
-        <div className="basis-7/12   px-10">
+        <div className=" lg:basis-7/12   px-10">
           <p className="border-l-4 mb-4 border-primary pl-2 text-black text-lg font-bold  leading-custom-bottom">
             KHÁM PHÁ
           </p>
@@ -49,7 +49,7 @@ const News = () => {
                     classNameParent="flex justify-start  gap-4"
                     classNameChild=" justify-start items-start h-full"
                     classNameImage="rounded-lg shadow-2xl"
-                    height="h-[200px]"
+                    heightImg="h-[200px]"
                     img="https://file.hstatic.net/1000075078/article/thecoffeehouse_caphehighlight01_de40c0102a954c50a328f7befcdd82bd_master.jpg"
                     title="“XUÂN LÊN ĐI!”: LỜI CHÚC Ý NGHĨA CHO NĂM THÌN ĐIỀU CHI CŨNG NHƯ Ý"
                     date="16/08/2023"
@@ -66,10 +66,10 @@ const News = () => {
         </div>
       </div>
 
-      <div className="flex  bg-secondary py-10  w-full h-full mt-40">
-        <div className="basis-5/12 -translate-y-28 shadow-2xl ">
+      <div className="flex max-lg:flex-col  bg-secondary py-10  w-full h-full lg:mt-40 mt-10 ">
+        <div className="lg:basis-5/12 max-lg:hidden -translate-y-28 shadow-2xl ">
           <Card
-            height="h-full"
+            heightImg="h-[900px]"
             classNameImage="rounded-none shadow-2xl "
             img="https://file.hstatic.net/1000075078/file/blog_94b05e56224646bc86c6e72c73ac4258.jpg"
           />
@@ -89,7 +89,7 @@ const News = () => {
                     classNameParent="flex justify-start  gap-4"
                     classNameChild=" justify-start items-start h-full"
                     classNameImage="rounded-lg shadow-2xl"
-                    height="h-[200px]"
+                    heightImg="h-[200px]"
                     img="https://file.hstatic.net/1000075078/article/thecoffeehouse_caphehighlight01_de40c0102a954c50a328f7befcdd82bd_master.jpg"
                     title="“XUÂN LÊN ĐI!”: LỜI CHÚC Ý NGHĨA CHO NĂM THÌN ĐIỀU CHI CŨNG NHƯ Ý"
                     date="16/08/2023"
@@ -105,7 +105,7 @@ const News = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

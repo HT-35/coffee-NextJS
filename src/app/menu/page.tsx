@@ -1,5 +1,5 @@
 import ListWater from '@/components/menu/product/listWater';
-import Title from '@/components/Title/Title';
+import Title from '@/components/Title';
 
 const Menu = () => {
   return (

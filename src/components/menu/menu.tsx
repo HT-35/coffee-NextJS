@@ -18,17 +18,23 @@ const menuItem: {
     title: 'Menu',
     path: '/menu',
   },
-  {
-    title: 'Sự Kiện',
-    path: '/product',
-  },
+
   {
     title: 'Tin Tức',
     path: '/news',
   },
   {
-    title: 'Đôi Nét Về Tổ Kiến',
+    title: 'Tổ Kiến',
     path: '/ant',
+  },
+
+  {
+    title: 'Tuyển Dụng',
+    path: '/recruit',
+  },
+  {
+    title: 'Liên Hệ',
+    path: '/product',
   },
 ];
 
@@ -54,28 +60,31 @@ const Menu = () => {
         }`}
       >
         <div className="py-1 flex items-centers justify-start pl-20  border-b-2 fixed w-full z-[999] bg-white text-black max-lg:hidden">
-          <div className="text-xl font-semibold basis-1/6">
+          <div className="text-base font-semibold basis-1/6">
             <Link href={'/'}>
               <Image
                 src={'/imgs/iconHome.png'}
                 alt=""
                 priority={false}
-                width={80}
-                height={80}
+                width={50}
+                height={50}
               ></Image>
             </Link>
           </div>
-          <div className="flex gap-8 text-xl font-semibold justify-center items-center ">
+          <div className="flex gap-8 text-base font-semibold justify-center items-center ">
             {menuItem.map((item, index) => {
               return (
                 <Link
                   href={item.path}
                   key={index}
-                  className={`cursor-pointer hover:text-primary   py-4 ${
-                    path === item.path ? 'text-primary' : ''
+                  className={`cursor-pointer hover:text-primary   py-2 ${
+                    path === item.path ||
+                    (path !== '/' && path.startsWith(item.path + '/'))
+                      ? 'text-primary'
+                      : ''
                   }`}
                 >
-                  <p className="text-base font-bold">{item.title}</p>
+                  <p className="text-base font-mono">{item.title}</p>
                 </Link>
               );
             })}
@@ -84,7 +93,7 @@ const Menu = () => {
               className=""
               target="_blank"
             >
-              <p className="text-base font-bold">Đường Tới Quán</p>
+              <p className="text-base font-mono">Đường Tới Quán</p>
             </Link>
           </div>
           <div className=""></div>

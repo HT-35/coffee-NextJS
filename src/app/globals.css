@@ -77,12 +77,26 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif);
+    /* font-family: var(--font-sans); */
+
+    @apply font-mono;
     font-weight: 600;
   }
 
   body.no-scroll {
     overflow: hidden;
     padding-right: 17px; /* Bằng độ rộng scrollbar mặc định */
+  }
+
+  .max-w {
+    @apply max-w-[1300px];
+  }
+
+  ul {
+    list-style-type: disc; /* Hoặc 'disc', 'circle', 'none' */
+  }
+
+  .text-28 {
+    font-size: 28px;
   }
 }

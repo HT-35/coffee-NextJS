@@ -4,9 +4,9 @@ const theme = ['Chuyện Cà Phê', 'Pha Cà Phê'];
 const Teaholic = ['Pha Trà', 'Câu chuyện về trà'];
 const Blog = ['In The Mood', 'Review', 'Human of TCH'];
 
-const PageWork = () => {
+const Discover = () => {
   return (
-    <div className="max-w-[1300px] mx-auto  flex gap-10  px-5 md:px-20 relative">
+    <div className="max-w-[1300px] mx-auto  flex gap-10 pb-10 px-5 md:px-20 relative">
       <div className="lg:basis-9/12 w-full flex flex-col gap-8">
         {Array(5)
           .fill(null)
@@ -14,7 +14,7 @@ const PageWork = () => {
             <Card
               key={index}
               classNameParent="flex justify-start gap-4"
-              classNameChild="justify-start items-start h-full"
+              classNameChild="justify-start items-start "
               classNameImage="rounded-lg shadow-2xl"
               heightImg="h-[200px]"
               img="https://file.hstatic.net/1000075078/article/thecoffeehouse_caphehighlight01_de40c0102a954c50a328f7befcdd82bd_master.jpg"
@@ -64,4 +64,4 @@ const PageWork = () => {
   );
 };
 
-export default PageWork;
+export default Discover;

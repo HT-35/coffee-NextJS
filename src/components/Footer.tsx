@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="w-full bg-slate-500  xl:pl-8 pb-8 text-white max-xl:px-2 max-lg:pb-2">
+    <div className="w-full bg-primary  xl:pl-8 pb-8 text-white max-xl:px-2 max-lg:pb-2">
       <div className="w-full flex items-center gap-4">
         <div className="basis-4/6 max-lg:basis-1/2 flex flex-col justify-start  ">
-          <p className="text-4xl my-6  text-left w-full text-primary   max-lg:text-lg  max-xl:my-2">
+          <p className="text-4xl my-6  text-left w-full text-white   max-lg:text-lg  max-xl:my-2">
             Chúng Tôi
           </p>
           <p className="text-white  max-md:text-[11px]">
@@ -14,8 +14,9 @@ const Footer = () => {
             bạn trẻ, sinh viên cũng như là nơi tụ tập cuối tuần cho gia đình,
             nhóm ban.
           </p>
+          <p className="pt-2">Liên Hệ: 1800 6936</p>
         </div>
-        <div
+        {/* <div
           className="basis-2/6 max-lg:basis-1/2  max-w-[600px] max-md:max-w-[190px] 
          max-lg:max-w-[400px] max-xl:max-w-[300px] max-xl:max-h-[200px]
          
@@ -36,7 +37,7 @@ const Footer = () => {
           <div className="text-center mt-1 max-md:text-[10px]">
             ĐC: 30/7 Tứ Hải, Phường 6, Tân Bình, HCM
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import MenuFood from '@/components/menuFood/MenuFood';
+import MenuFood from '@/components/MenuFood';
 
 const LayOutMenu = ({ children }: { children: React.ReactNode }) => {
   return (

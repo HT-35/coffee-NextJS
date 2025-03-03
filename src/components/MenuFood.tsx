@@ -32,27 +32,28 @@ const menuItem = [
 const MenuFood = () => {
   const router = useRouter();
 
-  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean | null>(null);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
 
-    // Hàm xử lý khi kích thước màn hình thay đổi
     const handleResize = (event: MediaQueryListEvent) => {
       setIsLargeScreen(event.matches);
     };
 
-    // Đặt giá trị ban đầu
-    setIsLargeScreen(mediaQuery.matches);
+    setIsLargeScreen(mediaQuery.matches); // Xác định kích thước ban đầu
 
-    // Lắng nghe sự kiện thay đổi kích thước màn hình
     mediaQuery.addEventListener('change', handleResize);
 
-    // Hủy lắng nghe sự kiện khi component unmount
     return () => {
       mediaQuery.removeEventListener('change', handleResize);
     };
   }, []);
+
+  if (isLargeScreen === null) {
+    return null; // Hoặc có thể return một spinner/loading indicator
+  }
+
   const pathname = usePathname();
 
   const handleSelectMenu = (path: string) => {
